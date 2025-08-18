@@ -1,0 +1,22 @@
+[package]
+name = "project_a"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+project_lib = { path = "../project_lib" }
+bam = "0.0.11"
+borsh = "0.9.3"
+flatbuffers = "2.1.2"
+libc = "0.2.146"
+serde.workspace = true
+regex = { workspace = true, optional = true }
+
+[features]
+regex = ["dep:regex"]
+
+[dev-dependencies]
+rand.workspace = true
+
+[build-dependencies]
+cc.workspace = true

@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = [
+    "project_a",
+    "project_b", 
+    "project_lib",
+    "project_lib2",
+]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+regex = { version = "1.6.0", default-features = false, features = ["std"] }
+cc = "1.0.73"
+rand = "0.8.5"

@@ -1,0 +1,8 @@
+[package]
+name = "project_lib2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+project_lib = { path = "../project_lib" }
+bam = "0.0.11"
