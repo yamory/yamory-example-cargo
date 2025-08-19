@@ -63,6 +63,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "bam"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "109918ba142fc1d2e67a4fead8b0a8bfb6370fa50559baf0c024de46dcafce0d"
+dependencies = [
+ "byteorder",
+ "crc32fast",
+ "flate2",
+]
+
+[[package]]
 name = "bitflags"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -377,7 +388,7 @@ dependencies = [
 name = "project_a"
 version = "0.1.0"
 dependencies = [
- "bam",
+ "bam 0.0.11",
  "borsh",
  "cc",
  "flatbuffers",
@@ -392,6 +403,7 @@ dependencies = [
 name = "project_b"
 version = "0.1.0"
 dependencies = [
+ "bam 0.1.4",
  "libc",
  "lz4-sys",
  "ntpd",
@@ -412,7 +424,7 @@ dependencies = [
 name = "project_lib2"
 version = "0.1.0"
 dependencies = [
- "bam",
+ "bam 0.0.11",
  "project_lib",
 ]
 

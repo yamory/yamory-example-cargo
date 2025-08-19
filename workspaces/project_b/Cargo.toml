@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 project_lib2 = { path = "../project_lib2" }
+bam = "0.1.2"
 libc = "0.2.146"
 lz4-sys = "1.8.0"
 ntpd = "0.1.1"
