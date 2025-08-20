@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 bam = "0.0.11"
-borsh = "0.9.3"
+named_borsh = { package = "borsh", version = "0.9.3" }
 flatbuffers = "2.1.2"
 libc = "0.2.146"
 lz4-sys = "1.8.0"
